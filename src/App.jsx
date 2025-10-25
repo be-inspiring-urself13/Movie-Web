@@ -7,7 +7,7 @@ import { WatchListProvider } from './context/WatchListContext'
 import MovieDetails from './pages/MovieDetails'
 function App() {
 
-  return (
+  return ( <div className='min-h-screen bg-black text-white'>
     <WatchListProvider>
       <BrowserRouter>
         <Navbar />
@@ -18,6 +18,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </WatchListProvider>
+    </div>
 
 
 

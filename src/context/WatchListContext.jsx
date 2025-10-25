@@ -15,7 +15,7 @@ export const WatchListProvider = ({ children }) => {
 
         fetch(url)
             .then((response) => response.json())
-            .then((data) => setGenreList(data.genres || []));
+            .then((data) => setGenreList(data.genres || []))
     }, [])
 
     const togglewatchlist = (movie) => {

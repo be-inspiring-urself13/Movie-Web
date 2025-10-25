@@ -16,10 +16,12 @@ function MovieDetails() {
   }, [id]);
 
   if (!movie) {
-    return  <div className="flex flex-col justify-center items-center h-screen font-semibold">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500 border-solid"></div>
-            <h1 className="mt-4 text-3xl">Loading...</h1>
-        </div>
+    return(
+       <div className="flex flex-col justify-center items-center h-screen font-semibold">
+               <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500 border-solid"></div>
+              <h1 className="mt-4 text-3xl">Loading...</h1>
+           </div>
+    )
   }
 
   return (
@@ -34,7 +36,7 @@ function MovieDetails() {
       {/* Details */}
       <div className="mt-6 md:mt-0 md:ml-10 max-w-xl">
         <h1 className="text-3xl text-white font-bold mb-4">{movie.title}</h1>
-        <p className="text-white mb-2">
+        <p className="text-whit mb-2">
           <span className="font-semibold">Release Date:</span>{" "}
           {movie.release_date}
         </p>

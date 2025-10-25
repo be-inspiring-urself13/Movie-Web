@@ -19,9 +19,9 @@ function Home() {
 
         fetch(url)
             .then((response) => response.json())
-            .then((data) => setMovies(data.results));
+            .then((data) => setMovies(data.results))
+    },[page, search])
 
-    }, [page, search])
 
 
     return (
