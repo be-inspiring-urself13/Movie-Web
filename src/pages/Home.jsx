@@ -41,11 +41,11 @@ function Home() {
             </div>
             <div className="pagination-container flex justify-between mt-5">
                 <button disabled={page == 1}
-                    className="p-2 bg-gray-700 rounded text-white"
+                    className="p-2  bg-gray-700 rounded hover:bg-orange-600 text-white"
                     onClick={() => {
                         setPage((prev) => prev - 1);
                     }}>PREV</button>
-                <button className="p-2 bg-gray-700 rounded text-white"
+                <button className="p-2 bg-gray-700 rounded hover:bg-orange-600 text-white"
                     onClick={() => {
                         setPage((nxt) => nxt + 1);
                     }}>NEXT</button>
